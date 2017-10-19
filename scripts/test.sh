@@ -68,7 +68,6 @@ function _unittest_with_coverage {
     # 'profile.cov'.
     mkdir -p ${BUILD_DIR}/{test-reports,coverage-reports}
     echo "mode: ${covermode}" > ${BUILD_DIR}/coverage-reports/profile.cov
-
     for import_path in ${PACKAGES}; do
         package=$(basename ${import_path})
 
